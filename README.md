@@ -190,16 +190,6 @@ sounds:
 ```
 
 ### **Sử Dụng Edit Menu (54-Slot GUI)**
-**Interface Layout:**
-```
-┌─────────────────────────────────────────────────────┐
-│ [Items Area] - 45 slots (5 rows)                   │
-│ Slot 0-44: Kéo thả items trực tiếp                 │
-├─────────────────────────────────────────────────────┤
-│ [Control Panel] - Bottom row                       │
-│ [Add] [Remove] [---] [---] [---] [Cancel] [Save]   │
-└─────────────────────────────────────────────────────┘
-```
 
 **Các thao tác:**
 1. **Add Item**: Cầm item → Click nút xanh "Add Item"
