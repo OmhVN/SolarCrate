@@ -5,7 +5,8 @@
 
 **Thông Tin Plugin:**
 - **Phiên bản**: 1.0.0  
-- **Tác giả**: Omh  
+- **Tác giả**: Omh
+- **Mã Nguồn**: Donutkeyall và Vnceocrates
 - **Tương thích**: Spigot/Paper/Folia 1.21.4+
 - **Build tool**: Maven
 - **Java**: 17+
