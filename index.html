@@ -16,8 +16,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #2b2b2b;
+            background: #f3f5f9;
             min-height: 100vh;
         }
         
@@ -25,12 +25,12 @@
             max-width: 1200px;
             margin: 0 auto;
             background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
             min-height: 100vh;
         }
         
         header {
-            background: linear-gradient(135deg, #ff7a18 0%, #af002d 100%);
+            background: linear-gradient(135deg, #ff7a18 0%, rgba(175, 0, 45, 0.85) 100%);
             color: white;
             padding: 2rem 0;
             text-align: center;
@@ -56,11 +56,12 @@
         }
         
         nav {
-            background: #34495e;
+            background: rgba(52, 73, 94, 0.95);
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
+            backdrop-filter: saturate(120%) blur(6px);
         }
         
         nav ul {
@@ -83,7 +84,7 @@
         }
         
         nav a:hover {
-            background: #3498db;
+            background: #3da2e6;
         }
         
         main {
@@ -95,10 +96,10 @@
         }
         
         h2 {
-            color: #2c3e50;
+            color: #1f2d3a;
             font-size: 2rem;
             margin-bottom: 1rem;
-            border-bottom: 3px solid #3498db;
+            border-bottom: 2px solid #3498db;
             padding-bottom: 0.5rem;
         }
         
@@ -116,16 +117,17 @@
         }
         
         .feature-card {
-            background: #f8f9fa;
+            background: #fbfcfe;
             padding: 1.5rem;
-            border-radius: 10px;
+            border-radius: 12px;
             border-left: 4px solid #3498db;
-            transition: transform 0.3s;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
         }
         
         .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(0,0,0,0.08);
         }
         
         .feature-card h4 {
@@ -134,9 +136,9 @@
         }
         
         .code-block {
-            background: #2c3e50;
-            color: #ecf0f1;
-            padding: 1.5rem;
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 1.25rem 1.5rem;
             border-radius: 10px;
             margin: 1rem 0;
             overflow-x: auto;
@@ -148,11 +150,11 @@
             position: absolute;
             top: 0.5rem;
             right: 1rem;
-            background: #3498db;
+            background: #3da2e6;
             color: white;
             padding: 0.2rem 0.5rem;
-            border-radius: 3px;
-            font-size: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.78rem;
         }
         
         .placeholder-table {
@@ -170,7 +172,7 @@
         }
         
         .placeholder-table th {
-            background: #3498db;
+            background: #3da2e6;
             color: white;
         }
         
@@ -225,7 +227,7 @@
         }
         
         .download-btn {
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            background: linear-gradient(135deg, #e74c3c, rgba(192, 57, 43, 0.9));
             color: white;
             padding: 0.8rem 1.5rem;
             border-radius: 25px;
@@ -233,19 +235,19 @@
             display: inline-block;
             margin-top: 1rem;
             font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 3px 10px rgba(231, 76, 60, 0.3);
+            transition: all 0.25s ease;
+            box-shadow: 0 6px 18px rgba(231, 76, 60, 0.25);
         }
         
         .download-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+            box-shadow: 0 10px 22px rgba(231, 76, 60, 0.35);
             color: white;
             text-decoration: none;
         }
         
         .auto-update-status {
-            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            background: linear-gradient(135deg, #2ecc71, rgba(39, 174, 96, 0.95));
             color: white;
             padding: 1rem;
             border-radius: 10px;
@@ -254,11 +256,11 @@
         }
         
         .changelog {
-            background: #f8f9fa;
-            border-left: 4px solid #3498db;
+            background: #f8fafc;
+            border-left: 4px solid #3da2e6;
             padding: 1rem;
             margin: 1rem 0;
-            border-radius: 5px;
+            border-radius: 6px;
         }
         
         .changelog h4 {
@@ -468,6 +470,9 @@
                 <h2>🔗 PlaceholderAPI Integration - NGẮN GỌN HỚN!</h2>
                 
                 <h3><span class="emoji">🔥</span> Placeholders MỚI - Ngắn gọn dễ dùng</h3>
+                <p id="hms-demo" style="margin:.5rem 0 1rem 0; color:#475569; font-size:.95rem;">
+                    Ví dụ định dạng HMS (demo): <strong><span id="hms-demo-value">--</span></strong>
+                </p>
                 <table class="placeholder-table">
                     <thead>
                         <tr>
@@ -700,6 +705,24 @@ sounds:
             updateBuildInfo();
             setInterval(updateBuildInfo, CONFIG.buildCheckInterval);
             console.log('🚀 SolarCrate Auto-Update Website initialized!');
+
+            // HMS time formatting demo
+            function formatHms(totalSeconds) {
+                const seconds = Math.max(0, Math.floor(totalSeconds || 0));
+                const hours = Math.floor(seconds / 3600);
+                const minutes = Math.floor((seconds % 3600) / 60);
+                const secs = seconds % 60;
+                const parts = [];
+                if (hours > 0) parts.push(hours + 'h');
+                if (minutes > 0 || hours > 0) parts.push(minutes + 'm');
+                parts.push(secs + 's');
+                return parts.join(' ');
+            }
+
+            // Demo with a sample value (e.g., 1h 30m 45s)
+            const demoSeconds = 1 * 3600 + 30 * 60 + 45;
+            const demoEl = document.getElementById('hms-demo-value');
+            if (demoEl) demoEl.textContent = formatHms(demoSeconds);
         });
         
         // Add download tracking
