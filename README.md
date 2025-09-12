@@ -8,10 +8,11 @@
 - **Tác giả**: Omh
 - **Mã Nguồn**: Donutkeyall và Vnceocrates
 - **Tương thích**: Spigot/Paper/Folia 1.21.4+
-- **Build tool**: Maven
-- **Java**: 17+
 
 ---
+## Lưu Ý
+### Ngưng Support Database
+Đã ngưng hỗ trợ Database từ 1.0 và không có bất kì bản phát hành mới nào hỗ trợ nữa.
 
 ## Danh Sách Lệnh
 
