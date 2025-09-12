@@ -1,10 +1,10 @@
-# SolarCrate Plugin - Hướng Dẫn Sử Dụng
+# SolarCrate Plugin
 
 ## Tổng Quan
 **SolarCrate** là plugin Minecraft hoàn chỉnh được phát triển bởi **Omh** với hệ thống crate và key tự động hoàn toàn có thể tùy chỉnh. Plugin hỗ trợ đầy đủ database, âm thanh, PlaceholderAPI và tương thích với **Spigot/Paper/Folia**.
 
 **Thông Tin Plugin:**
-- **Phiên bản**: 1.0
+- **Phiên bản**: 1.1 (Bản Cũ 1.0)
 - **Tác giả**: Omh
 - **Mã Nguồn**: Donutkeyall và Vnceocrates
 - **Tương thích**: Spigot/Paper/Folia 1.21.4+
@@ -29,11 +29,7 @@
 # Tạo và quản lý crate
 /solarcrate create <tên>              # Tạo crate mới tại vị trí chính xác
 /solarcrate delete <tên>              # Xóa crate hoàn toàn
-/solarcrate edit <tên>                # Mở GUI chỉnh sửa 54-slot
-
-# Thêm/xóa items
-/solarcrate additem <tên> <slot>      # Thêm item từ tay vào slot cụ thể
-/solarcrate removeitem <tên> <slot>   # Xóa item tại slot cụ thể
+/solarcrate edit <tên>                # Mở GUI chỉnh sửa.
 
 # Di chuyển crate (tọa độ cải thiện)
 /solarcrate movehere <tên>            # Di chuyển crate đến vị trí player chính xác
@@ -49,7 +45,6 @@
 
 # Thu hồi key  
 /solarcrate take <key> <player> <số>           # Thu hồi từ 1 player
-/solarcrate takeall <key> <số>                 # Thu hồi từ tất cả players
 ```
 
 ### **Lệnh Admin - Hệ Thống**
@@ -125,10 +120,8 @@ sounds:
 ## **PlaceholderAPI Integration**
 
 ### **Placeholders Có Sẵn**
-- `%solarcrate_keys_received%` - Số key đã nhận (Fixed "Never" issue)
-- `%solarcrate_last_key_time%` - Lần cuối nhận key (Proper timestamp)
-- `%solarcrate_time_remaining%` - Thời gian còn lại đến timer tiếp theo
-- `%solarcratekey_<cratename>%` - Số key của crates ```bash
+- `%sc_time%` - Hiện Thời Gian (Định Dạng H:M:S)
+- `%sc_key_<cratename>%` - Số key của crates
 ---
 
-> **Plugin được phát triển bởi Omh - SolarCrate v1.0**  
+> **Plugin được phát triển bởi Omh - SolarCrate v1.1**  
