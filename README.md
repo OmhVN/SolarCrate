@@ -4,7 +4,7 @@
 **SolarCrate** là plugin Minecraft hoàn chỉnh được phát triển bởi **Omh** với hệ thống crate và key tự động hoàn toàn có thể tùy chỉnh. Plugin hỗ trợ đầy đủ database, âm thanh, PlaceholderAPI và tương thích với **Spigot/Paper/Folia**.
 
 **Thông Tin Plugin:**
-- **Phiên bản**: 1.1 (Bản Cũ 1.0)
+- **Phiên bản**: 1.2 - R01
 - **Tác giả**: Omh
 - **Mã Nguồn**: Donutkeyall và Vnceocrates
 - **Tương thích**: Spigot/Paper/Folia 1.21.4+
@@ -125,4 +125,4 @@ sounds:
 - `%sc_key_<cratename>%` - Số key của crates
 ---
 
-> **Plugin được phát triển bởi Omh - SolarCrate v1.1**  
+> **Plugin được phát triển bởi Omh - SolarCrate v1.2 - R01**  
