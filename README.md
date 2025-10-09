@@ -7,7 +7,7 @@
 - **Phiên bản**: 1.2 - R02
 - **Tác giả**: Omh
 - **Mã Nguồn**: Donutkeyall và Vnceocrates
-- **Tương thích**: Spigot/Paper/Folia 1.2R02+
+- **Tương thích**: Spigot/Paper/Folia 1.21R01
 
 ---
 ## Lưu Ý
@@ -125,4 +125,4 @@ sounds:
 - `%sc_key_<cratename>%` - Số key của crates
 ---
 
-> **Plugin được phát triển bởi Omh - SolarCrate v1.2 - R01**  
+> **Plugin được phát triển bởi Omh - SolarCrate v1.2 - R0**  
