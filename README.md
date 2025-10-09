@@ -1,7 +1,7 @@
 # SolarCrate Plugin
 
 ## Tổng Quan
-**SolarCrate** là plugin Minecraft hoàn chỉnh được phát triển bởi **Omh** với hệ thống crate và key tự động hoàn toàn có thể tùy chỉnh. Plugin hỗ trợ đầy đủ database, âm thanh, PlaceholderAPI và tương thích với **Spigot/Paper/Folia**.
+**SolarCrate** là plugin Minecraft hoàn chỉnh được phát triển bởi **Omh** với hệ thống crate và key tự động hoàn toàn có thể tùy chỉnh và tương thích với **Spigot/Paper/Folia**.
 
 **Thông Tin Plugin:**
 - **Phiên bản**: 1.2 - R01
