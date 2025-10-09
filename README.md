@@ -125,4 +125,4 @@ sounds:
 - `%sc_key_<cratename>%` - Số key của crates
 ---
 
-> **Plugin được phát triển bởi Omh - SolarCrate v1.2 - R0**  
+> **Plugin được phát triển bởi Omh - SolarCrate v1.2 - R02**
