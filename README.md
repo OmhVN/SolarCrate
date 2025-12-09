@@ -4,15 +4,9 @@
 **SolarCrate** là plugin Minecraft hoàn chỉnh được phát triển bởi **Omh** với hệ thống crate và key tự động hoàn toàn có thể tùy chỉnh và tương thích với **Spigot/Paper/Folia**.
 
 **Thông Tin Plugin:**
-- **Phiên bản**: 1.2 - R02
-- **Tác giả**: Omh
-- **Mã Nguồn**: Donutkeyall và Vnceocrates
-- **Tương thích**: Spigot/Paper/Folia 1.21R01
-
----
-## Lưu Ý
-### Ngưng Support Database
-Đã ngưng hỗ trợ Database từ 1.0 và không có bất kì bản phát hành mới nào hỗ trợ nữa.
+- **Phiên bản**: 1.2 - R09
+- **Tác giả**: OmhVN
+- **Tương thích**: Paper/Folia
 
 ## Danh Sách Lệnh
 
@@ -81,41 +75,29 @@
 
 ### config.yml
 ```yaml
-# Timer Configuration
+language: "vi_vn"
+
+debug: false
+
+use_prefix: false
+
+# Giới hạn số key mỗi người chơi có thể giữ (-1 = không giới hạn)
+max-keys-per-player: -1
+
+auto-save-interval: 5
 timer:
-  interval: 3600                    # Khoảng thời gian giữa các lần trao key (giây)
+  # Thời gian giữa các lần phát key (-1 = tắt timer)
+  # Hỗ trợ định dạng: giây (3600), hoặc HMS (1h, 30m, 1h30m, 2h30m15s)
+  # Ví dụ: "1h" = 1 tiếng, "30m" = 30 phút, "1h30m" = 1 tiếng 30 phút
+  interval: "1h"
+  
+  # Lệnh chạy khi timer kích hoạt (dùng {player} cho tên người chơi)
   commands:
-    - "solarcrate give default {player} 1"  # Lệnh thực hiện khi timer kích hoạt
+    - "solarcrate give common {player} 1"
 
-# Messages
-messages:
-  before:                           # Tin nhắn trước khi trao key
-    - "&a&l⚡ &eSolarCrate Distribution Starting..."
-  after:                            # Tin nhắn sau khi trao key
-    - "&a&l✓ &eCrate keys have been distributed!"
-
-# Clickable message
 clickable:
-  command: "/warp crates"           # Lệnh khi click message
-  text: "#00A4FB[CLICK TO TELEPORT] &fOr type /warp crates"
-
-# Database configuration
-database:
-  mysql:
-    enabled: false                  # Sử dụng MySQL (false = SQLite)
-    host: "localhost"
-    port: 3306
-    database: "solarcrate"
-    username: "root"
-    password: ""
-
-# Sound effects
-sounds:
-  timer-execute:
-    enabled: false                  # Mặc định tắt âm thanh timer
-    sound: "BLOCK_NOTE_BLOCK_PLING"
-    volume: 1.0
-    pitch: 1.0
+  command: "/warp crates"
+  text: "&b&l⚡ BẤM ĐỂ DỊCH CHUYỂN &7→ /warp crates"
 ```
 
 ## **PlaceholderAPI Integration**
@@ -125,4 +107,4 @@ sounds:
 - `%sc_key_<cratename>%` - Số key của crates
 ---
 
-> **Plugin được phát triển bởi Omh - SolarCrate v1.2 - R02**
+> **Plugin được phát triển bởi Omh - SolarCrate v1.2 - R09**
