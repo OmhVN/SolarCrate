@@ -105,7 +105,6 @@ clickable:
 ### **Placeholders Có Sẵn**
 - `%sc_time%` - Hiện Thời Gian (Định Dạng H:M:S)
 - `%sc_key_<cratename>%` - Số key của crates
-- `%sc_keys%` - Hiển thị tổng keys theo định dạng K/M/B/T (ví dụ: 2.9M thay vì 2924662)
 - `%sc_key_<tên_crate>%` - Hiển thị keys của crate theo định dạng K/M/B/T
 - `%sc_key_raw_<tên_crate>%` - Hiển thị số gốc không định dạng
 ---
