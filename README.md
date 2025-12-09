@@ -7,6 +7,7 @@
 - **Phiên bản**: 1.2 - R09
 - **Tác giả**: OmhVN
 - **Tương thích**: Paper/Folia
+- **Database Systems:** SQLite.
 
 ## Danh Sách Lệnh
 
