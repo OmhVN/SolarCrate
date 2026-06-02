@@ -8,3 +8,6 @@
 - **Tác giả**: OmhVN
 - **Tương thích**: Paper/Folia
 - **Database Systems:** SQLite or MYSQL
+
+## wiki
+- **Links**: https://onic-studio.gitbook.io/solarplugins-docs/plugins/solarcrate
